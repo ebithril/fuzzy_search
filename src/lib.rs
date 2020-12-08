@@ -46,9 +46,9 @@ fn fuzzy_match_simple_internal(pattern: *const i8, string: *const i8) -> bool {
         }
 
         if *p == '\0' as i8 {
-            return false;
-        } else {
             return true;
+        } else {
+            return false;
         }
     }
 }
